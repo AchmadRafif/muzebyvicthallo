@@ -1,4 +1,4 @@
-import { Redirect, Stack } from 'expo-router';
+import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { Colors } from '../constants/colors';
 
@@ -11,7 +11,10 @@ export default function RootLayout() {
           headerShown: false,
           contentStyle: { backgroundColor: Colors.background },
         }}
-      />
+      >
+        <Stack.Screen name="(auth)" />``
+        <Stack.Screen name="(tabs)" />
+      </Stack>
     </>
   );
 }
