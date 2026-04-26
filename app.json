@@ -3,6 +3,7 @@
     "name": "muze",
     "slug": "muze",
     "version": "1.0.0",
+    "scheme": "muze",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
