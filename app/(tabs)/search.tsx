@@ -30,7 +30,10 @@ export default function SearchScreen() {
   };
 
   const renderProfile = ({ item }: { item: Profile }) => (
-    <TouchableOpacity style={styles.profileCard}>
+    <TouchableOpacity 
+      style={styles.profileCard}
+      onPress={() => router.push(`/user/${item.id}`)}
+    >
       <View style={styles.avatar}>
         <Text style={styles.avatarText}>{item.username[0].toUpperCase()}</Text>
       </View>
